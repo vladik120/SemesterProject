@@ -1,6 +1,6 @@
 package entities;
 
-public class Worker {
+public class Worker extends User{
 	
 	private String firstName;
 	private String lastName;

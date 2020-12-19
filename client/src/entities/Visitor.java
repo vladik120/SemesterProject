@@ -1,6 +1,6 @@
 package entities;
 
-public class Visitor {
+public class Visitor extends User{
 	private int ID;
 	private String Email;
 	private String phoneNum;

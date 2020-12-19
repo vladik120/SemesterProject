@@ -1,7 +1,8 @@
 package controllers;
 
+import entities.DataManager;
 import entities.Visitor;
-import controllers.DataManager;
+import entities.Worker;
 
 public class LoginController extends AbstractController{
 	private int id;
@@ -21,7 +22,9 @@ public class LoginController extends AbstractController{
 			DM.setCurrentUser(current);
 		}
 		else {
-			
+			//TODO: validate if Park Manager/Worker/Department Manager
+			Worker current = new Worker(password, password, password, password, password);
+			DM.setCurrentUser(current);
 		}
 		
 	}

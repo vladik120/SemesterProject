@@ -1,10 +1,8 @@
-package controllers;
-
-import entities.Visitor;
+package entities;
 
 public class DataManager {
 	private static DataManager instance = null;
-	private Visitor currentUser = null;
+	private User currentUser = null;
 	private boolean PreOrder;
 	
 	private DataManager() {
@@ -16,11 +14,11 @@ public class DataManager {
 		return instance;
 	}
 
-	public Visitor getCurrentUser() {
+	public User getCurrentUser() {
 		return currentUser;
 	}
 
-	public void setCurrentUser(Visitor currentUser) {
+	public void setCurrentUser(User currentUser) {
 		this.currentUser = currentUser;
 	}
 
