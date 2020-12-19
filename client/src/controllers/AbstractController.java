@@ -6,6 +6,6 @@ public abstract class AbstractController {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public abstract void RunQueryOnDB(Object obj);
+	public abstract Object RunQueryOnDB(Object obj);
 
 }
